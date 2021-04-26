@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("/imgs/maintenance.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  padding-top: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.logo_container {
+  max-width: 160px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.header {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.text_box {
+  padding: 0.85rem 2.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
+
+.wpb_wrapper {
+  flex-shrink: 0;
+  padding-bottom: 30px;
+}
