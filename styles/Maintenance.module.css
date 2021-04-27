@@ -49,6 +49,37 @@
   line-height: 1.6rem;
 }
 
+.counter {
+  padding: 2rem 0.85rem;
+}
+
+.social_media_icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2em;
+}
+
+.icon_border {
+  padding: 4px 8px;
+  background: var(--main-pink);
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+}
+
+.icon_border:hover {
+  background: var(--salmon-pink);
+}
+
+.icon_border:hover .icons {
+  color: white;
+}
+
+.icons {
+  font-size: 2em;
+  color: var(--main-black);
+  transition: color 0.3s ease-in-out;
+}
+
 .wpb_wrapper {
   flex-shrink: 0;
   padding-bottom: 30px;

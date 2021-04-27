@@ -1,0 +1,22 @@
+.main_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2.5rem;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.count {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.interval {
+  text-transform: capitalize;
+}

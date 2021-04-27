@@ -1,4 +1,7 @@
 import styles from "../styles/Maintenance.module.css";
+import Counter from "./Counter";
+import Link from "next/link";
+import { FiInstagram, FiFacebook } from "react-icons/fi";
 
 const Maintenance = () => {
   return (
@@ -16,10 +19,25 @@ const Maintenance = () => {
             the most recent news.
           </p>
         </div>
-        <div className={styles.cogs}>
-          <i class="fas fa-cogs" />
+        <div className={styles.counter}>
+          <Counter />
         </div>
-        <div className={styles.social_media_icons}></div>
+        <ul className={styles.social_media_icons}>
+          <li className={styles.icon_border}>
+            <Link href="" target="_blank">
+              <a>
+                <FiFacebook className={styles.icons} />
+              </a>
+            </Link>
+          </li>
+          <li className={styles.icon_border}>
+            <Link href="">
+              <a>
+                <FiInstagram className={styles.icons} />
+              </a>
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className={styles.wpb_wrapper}>
         <p>Buttercreamsupreme © 2021. All rights reserved</p>
