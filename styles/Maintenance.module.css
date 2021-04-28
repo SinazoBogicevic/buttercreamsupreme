@@ -63,7 +63,7 @@
   padding: 4px 8px;
   background: var(--main-pink);
   border-radius: 50px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .icon_border:hover {

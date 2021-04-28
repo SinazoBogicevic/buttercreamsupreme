@@ -7,7 +7,24 @@ const Meta = ({ title, keywords, description }) => {
       <meta name="keywords" content={keywords} />
       <meta name="description" content={description} />
       <meta charset="utf-8" />
-      <link rel="icon" href="/favicon.ico" />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/site.webmanifest" />
       <title>{title}</title>
     </Head>
   );
@@ -15,7 +32,8 @@ const Meta = ({ title, keywords, description }) => {
 
 Meta.defaultProps = {
   title: "ButterCream Supreme",
-  keywords: "bakery, cakes, cupcakes, gluten-free cakes, gluten-free cupcakes",
+  keywords:
+    "south coast, port edward, margatem uvongo, port shepstone, delivers,bakery, cakes, cupcakes, gluten-free cakes, gluten-free cupcakes",
   description: "order cupcakes and cakes for all occassions",
 };
 
