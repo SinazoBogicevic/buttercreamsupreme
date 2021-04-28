@@ -13,10 +13,9 @@ const Maintenance = () => {
         <h2 className={styles.header}>site under construction</h2>
         <div className={styles.text_box}>
           <p>
-            We are currently working on the back-end, our team is working hard
-            and we’ll be back within the time.
-            <br /> Please follow us in the social media to stay up to date for
-            the most recent news.
+            Our team is working hard on the online store.
+            <br /> Follow us on social media to browse the items on offer and to
+            place an order.
           </p>
         </div>
         <div className={styles.counter}>
@@ -24,23 +23,27 @@ const Maintenance = () => {
         </div>
         <ul className={styles.social_media_icons}>
           <li className={styles.icon_border}>
-            <Link href="" target="_blank">
-              <a>
-                <FiFacebook className={styles.icons} />
-              </a>
-            </Link>
+            <a
+              href="https://m.facebook.com/buttercreamsupremesa/?refsrc=https%3A%2F%2Fm.facebook.com%2F102280581924652%2F&_rdr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiFacebook className={styles.icons} />
+            </a>
           </li>
           <li className={styles.icon_border}>
-            <Link href="">
-              <a>
-                <FiInstagram className={styles.icons} />
-              </a>
-            </Link>
+            <a
+              href="https://www.instagram.com/buttercreamsupremesa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiInstagram className={styles.icons} />
+            </a>
           </li>
         </ul>
       </div>
       <div className={styles.wpb_wrapper}>
-        <p>Buttercreamsupreme © 2021. All rights reserved</p>
+        <p>ButtercreamSupreme © 2021. All rights reserved</p>
       </div>
     </div>
   );

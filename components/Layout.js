@@ -1,5 +1,12 @@
+import Meta from "./Meta";
+
 const Layout = ({ children }) => {
-  return <div>{children}</div>;
+  return (
+    <>
+      <Meta />
+      <div>{children}</div>
+    </>
+  );
 };
 
 export default Layout;
