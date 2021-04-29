@@ -84,12 +84,13 @@
 
 .wpb_wrapper {
   flex-shrink: 0;
-  padding: 30px 2rem;
+  padding: 30px 1rem;
 }
 
 @media screen and (max-width: 370px) {
   .content_container {
-    padding: 0rem 2rem 4rem;
+    padding: 4rem 1rem;
+    margin-top: 8rem;
   }
 
   .text-box {
@@ -98,5 +99,11 @@
 
   .logo_container {
     margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  margin-top .text-box {
+    padding: 1rem 4px;
   }
 }
