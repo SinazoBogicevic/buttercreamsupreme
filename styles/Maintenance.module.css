@@ -82,5 +82,15 @@
 
 .wpb_wrapper {
   flex-shrink: 0;
-  padding-bottom: 30px;
+  padding: 30px 2rem;
+}
+
+@media screen and (max-width: 370px) {
+  .content_container {
+    padding: 4rem 2rem 1rem;
+  }
+
+  .logo_container {
+    margin: 5rem 0;
+  }
 }
