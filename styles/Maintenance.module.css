@@ -66,11 +66,13 @@
   transition: all 0.8s ease-in-out;
 }
 
-.icon_border:hover {
+.icon_border:hover,
+.icon_border:active {
   background: var(--salmon-pink);
 }
 
-.icon_border:hover .icons {
+.icon_border:hover .icons,
+.icon_border:active .icons {
   color: white;
 }
 
@@ -87,10 +89,14 @@
 
 @media screen and (max-width: 370px) {
   .content_container {
-    padding: 4rem 2rem 1rem;
+    padding: 0rem 2rem 4rem;
+  }
+
+  .text-box {
+    padding: 8px 6px;
   }
 
   .logo_container {
-    margin: 5rem 0;
+    margin-bottom: 2.5rem;
   }
 }
