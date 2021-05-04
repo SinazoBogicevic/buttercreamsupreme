@@ -6,4 +6,4 @@
 <li> the dashboard for the owner to update products, change banners, manage clients and post articles</li>
 </ul>
 <p>App is built using Nextjs, Redux, Firebase, framermotion, styled-components and quilljs</p>
-<a href="buttercreamsupreme.co.za target="_blank">live link </a>
+<p>www.buttercreamsupreme.co.za</p>
