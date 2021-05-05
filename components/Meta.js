@@ -6,6 +6,7 @@ const Meta = ({ title, keywords, description }) => {
       <meta name="viewport" content="width=device-width, initial-scale= 1" />
       <meta name="keywords" content={keywords} />
       <meta name="description" content={description} />
+      <meta name="theme-color" content="#dbc3bf" />
       <meta charset="utf-8" />
       <link
         rel="apple-touch-icon"
@@ -31,10 +32,11 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "ButterCream Supreme",
+  title: "Buttercream Supreme",
   keywords:
-    "south coast, port edward, margatem uvongo, port shepstone, delivers,bakery, cakes, cupcakes, gluten-free cakes, gluten-free cupcakes",
-  description: "order cupcakes and cakes for all occassions",
+    "south coast, port edward, margate, uvongo, port shepstone, delivers,bakery near me, cakes near me, cupcakes near me, gluten-free cakes, gluten-free cupcakes",
+  description:
+    "Buttercream Supreme specialises in gourmet cakes and cupakes. We deliver to the South and Wild Coast",
 };
 
 export default Meta;
