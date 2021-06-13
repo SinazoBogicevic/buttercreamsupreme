@@ -1,0 +1,6 @@
+export const pink = '#dbc3bf'
+export const salmon = 'rgb(250, 128, 114)'
+export const black = '#000000'
+export const brown = '#422e28'
+export const white = '#ffffff'
+export const overlay = 'rgba(0,0,0,0.3)'
