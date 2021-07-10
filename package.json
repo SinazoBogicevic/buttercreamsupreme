@@ -30,6 +30,7 @@
     "@types/react": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^4.0.0",
+    "autoprefixer": "^9",
     "babel-eslint": "^10.0.0",
     "babel-loader": "^8.2.2",
     "eslint": "^7.5.0",
@@ -43,7 +44,9 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
     "eslint-plugin-testing-library": "^3.9.0",
+    "postcss": "^7",
     "prettier": "^2.2.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.3.2"
   }
 }
