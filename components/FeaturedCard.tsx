@@ -1,6 +1,4 @@
-/* eslint-disable prettier/prettier */
 import React, { ReactElement } from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import "../styles/tailwind.css";
 
 export type Props = {
@@ -39,7 +37,7 @@ export default function FeaturedCard({
             </span>
             <span className="leading-10">
               {sale && (
-                <span className="text-gray-600 text-sm line-through mr-4">
+                <span className="text-gray-400 text-sm line-through mr-4">
                   R{salePrice}
                 </span>
               )}

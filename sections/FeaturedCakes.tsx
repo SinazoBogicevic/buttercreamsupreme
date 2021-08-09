@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React, { ReactElement } from "react";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
