@@ -4,7 +4,7 @@ import "../styles/tailwind.css";
 import FeaturedCard from "./FeaturedCard";
 
 export type Props = {
-  gridData?: {
+  gridData: {
     name: string;
     price: number;
     salePrice: number;
