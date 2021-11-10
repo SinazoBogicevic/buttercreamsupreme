@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 
@@ -5,20 +6,35 @@ import { IoCallSharp } from "react-icons/io5";
 
 export const AnimatedButton = () => {
   return (
-    <div className="flex flex-col">
-      <button className="flex  items-center justify-center mb-2 text-2xl p-0 w-12 h-12 bg-blue-600 text-white rounded-full hover:bg-blue-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
+    <div className="flex flex-col w-16">
+      <motion.button
+        animate={{ y: 0 }}
+        initial={{ y: 120 }}
+        transition={{ duration: 0.4 }}
+        className="flex  items-center justify-center mb-2 text-2xl p-0 w-12 h-12 bg-white text-blue-600 rounded-full hover:bg-blue-700 hover:text-white focus:scale-110 motion-reduce:transform-none  active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none z-0"
+      >
         <FaFacebookF />
-      </button>
-      <button className="flex items-center justify-center mb-2 text-2xl p-0 w-12 h-12 bg-red-600 text-white rounded-full hover:bg-red-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
+      </motion.button>
+      <motion.button
+        animate={{ y: 0 }}
+        initial={{ y: 100 }}
+        transition={{ duration: 0.367 }}
+        className="flex items-center justify-center mb-2 text-2xl p-0 w-12 h-12 bg-white text-red-600 rounded-full hover:bg-red-700 hover:text-white focus:scale-110 motion-reduce:transform-none  active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none z-10"
+      >
         <FaInstagram />
-      </button>
+      </motion.button>
 
-      <button className="flex items-center justify-center mb-2 text-2xl p-0 w-12 h-12 bg-green-600 text-white rounded-full hover:bg-green-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
+      <motion.button
+        animate={{ y: 0 }}
+        initial={{ y: 60 }}
+        transition={{ duration: 0.36 }}
+        className="flex items-center justify-center mb-2 text-2xl p-0 w-12 h-12 bg-white text-green-600 rounded-full hover:bg-green-700 hover:text-white focus:scale-110 motion-reduce:transform-none  active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none z-20"
+      >
         <FaWhatsapp />
-      </button>
-      <button className="flex items-center justify-center text-2xl p-0 w-12 h-12 bg-pink-500 text-white rounded-full hover:bg-pink-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
+      </motion.button>
+      <motion.button className="flex items-center justify-center text-2xl p-0 w-12 h-12 bg-white text-pink-500 rounded-full hover:bg-pink-700 hover:text-white focus:scale-110 motion-reduce:transform-none  active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none z-30">
         <IoCallSharp />
-      </button>
+      </motion.button>
     </div>
   );
 };
