@@ -39,10 +39,10 @@ export default function Footer(): ReactElement {
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
-            <div className="flex flex-row flex-wrap items-top mb-6">
-              <div className=" px-4 ml-auto">
+            <div className="flex flex-row flex-wrap justify-between items-top mb-6">
+              <div className="">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                  Useful Links
+                  Quick Links
                 </span>
                 <ul className="list-unstyled">
                   <li>
@@ -79,7 +79,46 @@ export default function Footer(): ReactElement {
                   </li>
                 </ul>
               </div>
-              <div className=" px-4">
+              <div className="">
+                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                  Work Times
+                </span>
+                <ul className="list-unstyled">
+                  <li>
+                    <a
+                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/presentation?ref=njs-profile"
+                    >
+                      Mon - Thu: 8 am - 8 pm
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      href="https://blog.creative-tim.com?ref=njs-profile"
+                    >
+                      Fri: 8 am - 8 pm
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      href="https://www.github.com/creativetimofficial?ref=njs-profile"
+                    >
+                      Sat: 9am - 4pm
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
+                    >
+                      Sun: Closed
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className=" ">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                   Other Resources
                 </span>
