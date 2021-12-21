@@ -9,7 +9,7 @@ import "../styles/tailwind.css";
 
 export default function Footer(): ReactElement {
   return (
-    <footer className="relative  pt-8 pb-6">
+    <footer className="shrink-0 w-11/12 pt-12 border-2  border-red relative  pt-8 pb-6">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
@@ -40,11 +40,11 @@ export default function Footer(): ReactElement {
           </div>
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex flex-row flex-wrap justify-between items-top mb-6">
-              <div className="">
+              <div className="pr-6">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                   Quick Links
                 </span>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled pl-0">
                   <li>
                     <a
                       className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
@@ -79,11 +79,11 @@ export default function Footer(): ReactElement {
                   </li>
                 </ul>
               </div>
-              <div className="">
+              <div className="pr-6">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                   Work Times
                 </span>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled pl-0">
                   <li>
                     <a
                       className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
@@ -118,11 +118,11 @@ export default function Footer(): ReactElement {
                   </li>
                 </ul>
               </div>
-              <div className=" ">
+              <div className="pr-6">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
                   Other Resources
                 </span>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled pl-0">
                   <li>
                     <a
                       className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"

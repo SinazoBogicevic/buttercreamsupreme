@@ -1,9 +1,28 @@
 import Grid from "../components/Grid";
+import Navbar from "../components/Navbar";
+import Footer from "../sections/Footer";
 
 export default function Gallery() {
   return (
-    <div>
-      <header className="mb-12 text-center">
+    <div className="flex flex-col">
+      <Navbar
+        image={"Home"}
+        links={[
+          {
+            path: "/home",
+            link: "home",
+          },
+          {
+            path: "/products",
+            link: "products",
+          },
+          {
+            path: "/gallery",
+            link: "gallery",
+          },
+        ]}
+      />
+      <header className="my-16 text-center">
         <h1 className="font-bold text-4xl text-black capitalize text-center ">
           Our Selection
         </h1>
@@ -12,10 +31,32 @@ export default function Gallery() {
           cupidatat.
         </h4>
       </header>
-      <Grid gridData={STATIC_DATA} />
+      <div className="mt-16 mb-28">
+        <Grid gridData={STATIC_DATA} />
+      </div>
+
+      <Footer />
     </div>
   );
 }
+
+const NAVBAR_PROPS = {
+  image: "image",
+  links: [
+    {
+      path: "/home",
+      link: "home",
+    },
+    {
+      path: "/products",
+      link: "products",
+    },
+    {
+      path: "/gallery",
+      link: "gallery",
+    },
+  ],
+};
 
 const STATIC_DATA = [
   {
