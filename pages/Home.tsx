@@ -1,8 +1,12 @@
-import Grid from "../components/Grid";
 import Navbar from "../components/Navbar";
+import FeaturedCakes from "../sections/FeaturedCakes";
 import Footer from "../sections/Footer";
+import KnowMoreBanner from "../sections/KnowMoreBanner";
+import NewsletterBanner from "../sections/NewsletterBanner";
+import ServicesWeProvideBanner from "../sections/ServicesWeProvideBanner";
+import Testimonial from "../sections/Testimonial";
 
-export default function Gallery() {
+export default function Home() {
   return (
     <div className="flex flex-col ">
       <Navbar
@@ -22,19 +26,11 @@ export default function Gallery() {
           },
         ]}
       />
-      <header className="my-16 text-center">
-        <h1 className="font-bold text-4xl text-black capitalize text-center ">
-          Our Selection
-        </h1>
-        <h4 className="font-medium text-xl text-gray-400 capitalize italic text-center ">
-          loremProident nulla laborum aliquip esse est magna dolore fugiat elit
-          cupidatat.
-        </h4>
-      </header>
-      <div className="mt-16 mb-28">
-        <Grid gridData={STATIC_DATA} />
-      </div>
-
+      <KnowMoreBanner />
+      <FeaturedCakes />
+      <ServicesWeProvideBanner />
+      <Testimonial />
+      <NewsletterBanner />
       <Footer />
     </div>
   );

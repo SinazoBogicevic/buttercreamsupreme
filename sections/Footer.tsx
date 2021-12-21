@@ -9,7 +9,7 @@ import "../styles/tailwind.css";
 
 export default function Footer(): ReactElement {
   return (
-    <footer className="shrink-0 w-11/12 pt-12 border-2  border-red relative  pt-8 pb-6">
+    <footer className="self-center shrink-0 mx-2 w-full pt-12  rounded  bg-red-900 text-white relative  pt-8 pb-6">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
@@ -19,19 +19,19 @@ export default function Footer(): ReactElement {
             </h5>
             <div className="mt-6 lg:mb-0 mb-6">
               <button
-                className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="text-white border-2 border-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <FaFacebookF className="fab fa-facebook-square" />
               </button>
               <button
-                className="bg-white text-pink-700 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="text-white border-2 border-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <FaInstagram />
               </button>
               <button
-                className="bg-white text-green-600  shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                className="text-white border-2 border-white  shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <FaWhatsapp className="fab fa-whatsapp " />
@@ -41,13 +41,13 @@ export default function Footer(): ReactElement {
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex flex-row flex-wrap justify-between items-top mb-6">
               <div className="pr-6">
-                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                <span className="block uppercase text-slate-50 font-light text-sm  mb-2">
                   Quick Links
                 </span>
                 <ul className="list-unstyled pl-0">
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://www.creative-tim.com/presentation?ref=njs-profile"
                     >
                       About Us
@@ -55,7 +55,7 @@ export default function Footer(): ReactElement {
                   </li>
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://blog.creative-tim.com?ref=njs-profile"
                     >
                       Blog
@@ -63,7 +63,7 @@ export default function Footer(): ReactElement {
                   </li>
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://www.github.com/creativetimofficial?ref=njs-profile"
                     >
                       Github
@@ -71,7 +71,7 @@ export default function Footer(): ReactElement {
                   </li>
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
                     >
                       Free Products
@@ -80,13 +80,13 @@ export default function Footer(): ReactElement {
                 </ul>
               </div>
               <div className="pr-6">
-                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                <span className="block uppercase text-slate-50 font-light text-sm  mb-2">
                   Work Times
                 </span>
                 <ul className="list-unstyled pl-0">
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://www.creative-tim.com/presentation?ref=njs-profile"
                     >
                       Mon - Thu: 8 am - 8 pm
@@ -94,7 +94,7 @@ export default function Footer(): ReactElement {
                   </li>
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://blog.creative-tim.com?ref=njs-profile"
                     >
                       Fri: 8 am - 8 pm
@@ -102,7 +102,7 @@ export default function Footer(): ReactElement {
                   </li>
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://www.github.com/creativetimofficial?ref=njs-profile"
                     >
                       Sat: 9am - 4pm
@@ -110,7 +110,7 @@ export default function Footer(): ReactElement {
                   </li>
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
                     >
                       Sun: Closed
@@ -119,13 +119,13 @@ export default function Footer(): ReactElement {
                 </ul>
               </div>
               <div className="pr-6">
-                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                <span className="block uppercase text-slate-50 font-light text-sm mb-2">
                   Other Resources
                 </span>
                 <ul className="list-unstyled pl-0">
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://creative-tim.com/terms?ref=njs-profile"
                     >
                       Terms &amp; Conditions
@@ -133,7 +133,7 @@ export default function Footer(): ReactElement {
                   </li>
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://creative-tim.com/privacy?ref=njs-profile"
                     >
                       Privacy Policy
@@ -141,7 +141,7 @@ export default function Footer(): ReactElement {
                   </li>
                   <li>
                     <a
-                      className="text-pink-600 hover:text-pink-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm hover:underline hover:decoration-solid"
                       href="https://creative-tim.com/contact-us?ref=njs-profile"
                     >
                       Contact Us
@@ -152,14 +152,14 @@ export default function Footer(): ReactElement {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-blueGray-300" />
+        <hr className="my-6 border-white" />
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm text-blueGray-500 font-semibold py-1">
+            <div className="text-sm text-white font-semibold py-1">
               Copyright © <span id="get-current-year">2021</span>
               <a
                 href="https://www.creative-tim.com/product/notus-js"
-                className="text-pink-500 hover:text-pink-800"
+                className="text-white"
                 target="_blank"
               >
                 Buttercream Supreme

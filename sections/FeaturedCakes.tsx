@@ -28,7 +28,9 @@ export default function Featured(): ReactElement {
           Seldolor sit amet consect etur
         </Typography>
       </div>
-      <Grid />
+      <div className="mt-16 mb-28">
+        <Grid gridData={STATIC_DATA} />
+      </div>
     </div>
   );
 }
@@ -94,3 +96,38 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   })
 );
+
+const STATIC_DATA = [
+  {
+    name: "Product1",
+    price: 250,
+    salePrice: 190,
+    sale: true,
+    thumb:
+      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+  },
+  {
+    name: "Product2",
+    price: 250,
+    salePrice: 190,
+    sale: true,
+    thumb:
+      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+  },
+  {
+    name: "Product3",
+    price: 250,
+    salePrice: 190,
+    sale: true,
+    thumb:
+      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+  },
+  {
+    name: "Product4",
+    price: 250,
+    salePrice: 190,
+    sale: true,
+    thumb:
+      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+  },
+];
