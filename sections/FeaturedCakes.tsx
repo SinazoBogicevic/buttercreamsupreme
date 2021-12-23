@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme: Theme) =>
     container: {
       display: "flex",
       flexDirection: "column",
+      marginTop: 24,
     },
     title: {
       textTransform: "capitalize",

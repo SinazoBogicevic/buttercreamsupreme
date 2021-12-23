@@ -27,9 +27,9 @@ function TestimonialCarousel({
   refs,
 }: TestimonialCarouselProps): ReactElement {
   return (
-    <div className="w-full flex-shrink-0" ref={refs[index]}>
-      <div className="flex flex-col text-center text-white ">
-        <p className="my-1 text-base pb-2">{text}</p>
+    <div className="w-full flex-shrink-0 " ref={refs[index]}>
+      <div className="flex flex-col text-center text-white">
+        <p className="my-1 text-base pb-2 ">{text}</p>
         <p className="my-1  font-base justify-start">- {name}</p>
       </div>
     </div>
@@ -44,18 +44,18 @@ function Pagination({
   previousImage,
 }: PaginationProps): ReactElement {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center text-white">
       <div
-        className="border-2 border-white rounded-full h-8 w-8 flex items-center justify-center mr-4"
+        className="border-2 border-white  rounded-full h-8 w-8 flex items-center justify-center mr-4"
         onClick={nextImage}
       >
-        <p className="text-white text-lg ">{`<`}</p>
+        <p className="text-black text-lg text-white">{`<`}</p>
       </div>
       <div
         className="border-2 border-white rounded-full h-8 w-8 flex items-center justify-center"
         onClick={previousImage}
       >
-        <p className="text-white text-lg ">{`>`}</p>
+        <p className="text-black text-lg text-white">{`>`}</p>
       </div>
     </div>
   );
@@ -106,10 +106,10 @@ export default function Testimonial(): ReactElement {
     return () => clearInterval(autoplay);
   }, [nextImage]);
   return (
-    <section className="container flex flex-1 items-center justify-center bg-gradient-to-r from-blue-300 to-pink-400 ">
+    <div className="w-screen mb-16 flex flex-1 items-center justify-center bg-red-300 text-white">
       <div className="flex flex-col justify-center items-center w-5/6">
         <header className="flex mb-12 text-center justify-between w-full">
-          <h1 className="font-bold text-4xl text-white capitalize italic">
+          <h1 className="font-bold text-4xl text-black capitalize italic text-white">
             Testimonial
           </h1>
           {true && (
@@ -122,7 +122,7 @@ export default function Testimonial(): ReactElement {
             />
           )}
         </header>
-        <div className="flex justify-center items-center w-4/5 overflow-hidden">
+        <div className="flex justify-center items-center w-4/5 overflow-hidden ">
           {TESTIMONIALS_STATICS.map(({ text, name }, index) => {
             return (
               <TestimonialCarousel
@@ -147,7 +147,7 @@ export default function Testimonial(): ReactElement {
           )}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

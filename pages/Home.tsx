@@ -8,7 +8,7 @@ import Testimonial from "../sections/Testimonial";
 
 export default function Home() {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col overflow-hidden">
       <Navbar
         image={"Home"}
         links={[
