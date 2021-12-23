@@ -1,8 +1,8 @@
-import React, { ReactElement } from "react";
+import { Button, CardMedia, Typography } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
-import { Typography, Button, CardMedia } from "@material-ui/core";
-import { grey, pink, white, black, salmon } from "../constants/colors";
-import { Backdrop } from "@material-ui/core";
+// @ts-ignore
+import heroImage from "../public/imgs/gingerHouseCake.jpg";
+import React, { ReactElement } from "react";
 
 export default function KnowMoreBanner(): ReactElement {
   const classes = useStyles();
@@ -24,16 +24,20 @@ export default function KnowMoreBanner(): ReactElement {
           received, around 300 BC, baking was introduced as an occupation and
           respectable profession for Romans.
         </Typography>
-        <Button className={classes.button}>know more about us</Button>
+        <div className={classes.buttonGroup}>
+          <Button variant="contained" className={classes.button}>
+            order
+          </Button>
+          <Button variant="outlined" className={classes.orderButton}>
+            contact
+          </Button>
+        </div>
       </div>
       <div className={classes.image}>
         <CardMedia
           component="img"
-          alt="cake"
-          image={
-            "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg"
-          }
-          title={"lady paying for a coffee"}
+          alt="cake made with gingerbread cookies and icing sugar"
+          image={heroImage}
           className={classes.cardMedia}
         />
       </div>
@@ -49,7 +53,10 @@ const useStyles = makeStyles((theme: Theme) =>
       flexWrap: "wrap",
       padding: "50px 100px",
       marginTop: "8rem",
+      backgroundColor: "#dc2626",
+      color: "#fafaf9",
       overflowX: "hidden",
+      borderRadius: 8,
       [theme.breakpoints.down("md")]: {
         padding: "12px 20px",
       },
@@ -58,7 +65,6 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
       flexDirection: "column",
       flex: 1,
-      paddingRight: 0,
       [theme.breakpoints.up("md")]: {
         paddingRight: 70,
       },
@@ -68,10 +74,15 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     intro: {
       marginBottom: 16,
+      paddingRight: 24,
     },
     snug: {
-      color: grey,
+      color: "#fafaf9",
       marginBottom: 24,
+      paddingRight: 24,
+    },
+    buttonGroup: {
+      display: "flex",
     },
     button: {
       width: "fit-content",
@@ -79,24 +90,44 @@ const useStyles = makeStyles((theme: Theme) =>
       border: "none",
       outline: "none",
       marginBottom: 32,
-      background: pink,
-      color: white,
+      marginRight: 8,
+      background: "#fafaf9",
       "& .MuiTouchRipple-root span": {
-        backgroundColor: "rgb(255, 255, 255, 0.3)",
-        opacity: 0.5,
+        backgroundColor: "#fafaf9",
       },
       "&:hover, &:focus": {
-        background: salmon,
+        opacity: 0.7,
+        backgroundColor: "#fafaf9",
+      },
+    },
+    orderButton: {
+      width: "fit-content",
+      borderRadius: 24,
+      marginBottom: 32,
+      color: "#fafaf9",
+      borderWidth: 2,
+      borderColor: "#fafaf9",
+      "& .MuiTouchRipple-root span": {},
+      "&:hover, &:focus": {
+        opacity: 0.7,
       },
     },
     image: {
-      width: 300,
+      width: 900,
+      maxWidth: 1450,
+      height: 500,
+      borderRadius: 8,
       [theme.breakpoints.down("md")]: {
-        width: 353,
+        width: 450,
+      },
+      [theme.breakpoints.down("sm")]: {
+        display: "none",
       },
     },
     cardMedia: {
       width: "100%",
+      height: "100%",
+      borderRadius: 8,
     },
   })
 );
