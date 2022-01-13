@@ -16,7 +16,7 @@ export default function FeaturedCard({
   ...rest
 }: Props): ReactElement {
   return (
-    <div className="max-w-56 w-56 max-h-80 h-80 bg-light-card-background shadow-md rounded-lg pb-4">
+    <div className="swiper-slide max-w-56 w-56 max-h-80 h-80 bg-light-card-background shadow-md rounded-lg pb-4">
       <div className="w-full h-52 max-h-52 overflow-hidden">
         <img
           className="rounded-t-lg w-full  h-full max-h-full object-cover"
