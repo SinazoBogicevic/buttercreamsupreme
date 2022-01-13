@@ -53,38 +53,3 @@ const NAVBAR_PROPS = {
     },
   ],
 };
-
-const STATIC_DATA = [
-  {
-    name: "Product1",
-    price: 250,
-    salePrice: 190,
-    sale: true,
-    thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
-  },
-  {
-    name: "Product2",
-    price: 250,
-    salePrice: 190,
-    sale: true,
-    thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
-  },
-  {
-    name: "Product3",
-    price: 250,
-    salePrice: 190,
-    sale: true,
-    thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
-  },
-  {
-    name: "Product4",
-    price: 250,
-    salePrice: 190,
-    sale: true,
-    thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
-  },
-];
