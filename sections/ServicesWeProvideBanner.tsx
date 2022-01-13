@@ -7,7 +7,7 @@ import { HiOutlineCake } from "react-icons/hi";
 
 export default function ServicesWeProvideBanner(): ReactElement {
   return (
-    <div className="w-screen text-black bg-red-300 text-white flex flex-col items-center pb-16">
+    <div className="w-screen bg-light-card-background text-darkest-text-color flex flex-col items-center rounded-lg shadow-lg mt-10 py-10">
       <h1 className="font-bold flex flex-col items-center content-center text-center  text-5xl uppercase mb-12">
         Goods
       </h1>

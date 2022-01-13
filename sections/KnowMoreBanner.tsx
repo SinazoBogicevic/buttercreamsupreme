@@ -92,6 +92,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: 32,
       marginRight: 8,
       background: "#fafaf9",
+      color: "#43000b",
       "& .MuiTouchRipple-root span": {
         backgroundColor: "#fafaf9",
       },

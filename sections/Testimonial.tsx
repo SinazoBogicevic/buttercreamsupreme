@@ -28,7 +28,7 @@ function TestimonialCarousel({
 }: TestimonialCarouselProps): ReactElement {
   return (
     <div className="w-full flex-shrink-0 " ref={refs[index]}>
-      <div className="flex flex-col text-center text-white">
+      <div className="flex flex-col text-center text-darkest-text-color">
         <p className="my-1 text-base pb-2 ">{text}</p>
         <p className="my-1  font-base justify-start">- {name}</p>
       </div>
@@ -44,18 +44,18 @@ function Pagination({
   previousImage,
 }: PaginationProps): ReactElement {
   return (
-    <div className="flex items-center text-white">
+    <div className="flex items-center text-darkest-text-color ">
       <div
-        className="border-2 border-white  rounded-full h-8 w-8 flex items-center justify-center mr-4"
+        className="border-2 border-darkest-text-color  rounded-full h-8 w-8 flex items-center justify-center mr-4"
         onClick={nextImage}
       >
-        <p className="text-black text-lg text-white">{`<`}</p>
+        <p className="text-lg text-darkest-text-color">{`<`}</p>
       </div>
       <div
-        className="border-2 border-white rounded-full h-8 w-8 flex items-center justify-center"
+        className="border-2 border-darkest-text-color rounded-full h-8 w-8 flex items-center justify-center"
         onClick={previousImage}
       >
-        <p className="text-black text-lg text-white">{`>`}</p>
+        <p className="text-lg text-darkest-text-color">{`>`}</p>
       </div>
     </div>
   );
@@ -106,10 +106,10 @@ export default function Testimonial(): ReactElement {
     return () => clearInterval(autoplay);
   }, [nextImage]);
   return (
-    <div className="w-screen mb-16 flex flex-1 items-center justify-center bg-red-300 text-white">
+    <div className="w-screen mb-16 flex flex-1 items-center justify-center bg-light-card-background text-darkest-text-color rounded-lg shadow-lg mt-10 py-10">
       <div className="flex flex-col justify-center items-center w-5/6">
         <header className="flex mb-12 text-center justify-between w-full">
-          <h1 className="font-bold text-4xl text-black capitalize italic text-white">
+          <h1 className="font-bold text-4xl capitalize italic text-darkest-text-color">
             Testimonial
           </h1>
           {true && (

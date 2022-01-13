@@ -2,7 +2,11 @@ import React, { ReactElement } from "react";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import { grey, pink, white } from "../constants/colors";
-import Grid from "../components/Grid";
+import FeaturedProductsCarousel from "../components/FeaturedProductsCarousel";
+// @ts-ignore
+import sliceOfFruitCake from "../public/imgs/sliceOfFruitCake.jpg";
+// @ts-ignore
+import ferreroCake from "../public/imgs/ferreroCake.jpg";
 
 export type Props = {
   featuredCakes: [
@@ -29,7 +33,7 @@ export default function Featured(): ReactElement {
         </Typography>
       </div>
       <div className="mt-16 mb-28">
-        <Grid gridData={STATIC_DATA} />
+        <FeaturedProductsCarousel gridData={STATIC_DATA} />
       </div>
     </div>
   );
@@ -46,10 +50,11 @@ const useStyles = makeStyles((theme: Theme) =>
       textTransform: "capitalize",
       fontWeight: 500,
       fontSize: "2rem",
+      color: "#56000f",
     },
     subtitle: {
       fontSize: 18,
-      color: grey,
+      color: "#56000f",
     },
     textContainer: {
       display: "flex",
@@ -100,35 +105,26 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const STATIC_DATA = [
   {
-    name: "Product1",
-    price: 250,
-    salePrice: 190,
-    sale: true,
+    name: "Triple layer lemon curd",
+    price: 540,
     thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+      "https://images.unsplash.com/photo-1627834377411-8da5f4f09de8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=701&q=80",
   },
   {
-    name: "Product2",
-    price: 250,
-    salePrice: 190,
-    sale: true,
-    thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+    name: "double layer chocolate mint",
+    price: 3300,
+    thumb: ferreroCake,
   },
   {
-    name: "Product3",
-    price: 250,
-    salePrice: 190,
-    sale: true,
+    name: "double layer cookies and cream",
+    price: 1247,
     thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+      "https://images.unsplash.com/photo-1612809075925-230725151da2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=788&q=80",
   },
   {
-    name: "Product4",
-    price: 250,
-    salePrice: 190,
-    sale: true,
+    name: "cinnamon and vanilla cupcake",
+    price: 294,
     thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+      "https://images.unsplash.com/photo-1596223575327-99a5be4faf1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   },
 ];
