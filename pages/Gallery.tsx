@@ -4,7 +4,7 @@ import Footer from "../sections/Footer";
 
 export default function Gallery() {
   return (
-    <div className="flex flex-col ">
+    <div>
       <Navbar
         image={"Home"}
         links={[
@@ -31,9 +31,7 @@ export default function Gallery() {
           cupidatat.
         </h4>
       </header>
-      <div className="mt-16 mb-28">
-        <Grid gridData={STATIC_DATA} />
-      </div>
+      <Grid gridData={STATIC_DATA} />
 
       <Footer />
     </div>

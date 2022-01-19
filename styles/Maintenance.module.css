@@ -87,7 +87,7 @@
   padding: 30px 1rem;
 }
 
-@media screen and (max-width: 370px) {
+/* @media screen and (max-width: 370px) {
   .content_container {
     padding: 4rem 1rem;
     margin-top: 8rem;
@@ -106,4 +106,4 @@
   margin-top .text-box {
     padding: 1rem 4px;
   }
-}
+} */

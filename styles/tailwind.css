@@ -2,20 +2,20 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.content-div {
+/* .content-div {
   background-image: url("https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2020/08/yonko-kilasi-Huxy4lSV-m4-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.content-div:hover {
+} */
+/* .content-div:hover {
   background-image: linear-gradient(
       to right,
       rgb(250, 128, 114, 0.801),
       hsla(300, 64%, 43%, 0.801)
     ),
     url("https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2020/08/yonko-kilasi-Huxy4lSV-m4-unsplash.jpg");
-}
+} */
 
 .image-cover {
   height: 300px;
