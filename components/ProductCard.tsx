@@ -29,22 +29,24 @@ export default function FeaturedCard({
         />
       </div>
       <div className="px-5 pt-2">
-        <div className="">
-          <h3 className="text-darkest-text-color capitalize font-medium text-m tracking-tight dark:text-white">
-            {name}
-          </h3>
-        </div>
+        <h3 className="text-darkest-text-color capitalize font-bold dark:text-white">
+          {name}
+        </h3>
 
-        <span className="block  text-gray-800 font-bold ">Order now</span>
+        {/* <span className="block  text-darkest-text-color font-bold ">
+          Order now
+        </span> */}
         <span className="">
           {sale && (
             <span className="text-gray-400 text-sm line-through mr-4">
               R{salePrice}
             </span>
           )}
-          <span className="text-black text-lg font-bold">R{price}</span>
+          <span className="text-darkest-text-color text-lg font-bold">
+            R{price}
+          </span>
         </span>
-        <span className="block text-gray-600 text-sm ">
+        <span className="block lightest-text-color text-sm ">
           Vivamus ac ligula sit amet erat luctus laoreet ac quis ligula. Donec
           bibendum faucibus purus eget cursus.
         </span>

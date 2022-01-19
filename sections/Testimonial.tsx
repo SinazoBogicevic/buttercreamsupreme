@@ -1,150 +1,42 @@
-import React, { createRef, ReactElement, useState, useEffect } from "react";
+import React, { ReactElement } from "react";
+import { EffectFade } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "../styles/tailwind.css";
 
-type TestimonialCarouselProps = {
-  text: string;
-  name: string;
-  index: number;
-  refs: any;
-};
-
-type TestimonialProps = {
-  menulist: TestimonialCarouselProps[];
-};
-
-type PaginationProps = {
-  totalNumberOfTestimonials: number;
-  refs: any;
-  currentImage: number;
-  nextImage: () => void;
-  previousImage: () => void;
-};
-
-function TestimonialCarousel({
-  text,
-  name,
-  index,
-  refs,
-}: TestimonialCarouselProps): ReactElement {
+export default function NewTestimonial(): ReactElement {
+  const image =
+    "https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80";
   return (
-    <div className="w-full flex-shrink-0 " ref={refs[index]}>
-      <div className="flex flex-col text-center text-darkest-text-color">
-        <p className="my-1 text-base pb-2 ">{text}</p>
-        <p className="my-1  font-base justify-start">- {name}</p>
-      </div>
-    </div>
-  );
-}
-
-function Pagination({
-  totalNumberOfTestimonials,
-  refs,
-  currentImage,
-  nextImage,
-  previousImage,
-}: PaginationProps): ReactElement {
-  return (
-    <div className="flex items-center text-darkest-text-color ">
-      <div
-        className="border-2 border-darkest-text-color  rounded-full h-8 w-8 flex items-center justify-center mr-4"
-        onClick={nextImage}
-      >
-        <p className="text-lg text-darkest-text-color">{`<`}</p>
-      </div>
-      <div
-        className="border-2 border-darkest-text-color rounded-full h-8 w-8 flex items-center justify-center"
-        onClick={previousImage}
-      >
-        <p className="text-lg text-darkest-text-color">{`>`}</p>
-      </div>
-    </div>
-  );
-}
-
-export default function Testimonial(): ReactElement {
-  const totalNumberOfTestimonials = TESTIMONIALS_STATICS.length;
-  const [currentImage, setCurrentImage] = useState(0);
-
-  const scrollToImage = (i) => {
-    setCurrentImage(i);
-    refs[i].current.scrollIntoView({
-      //     Defines the transition animation.
-      behavior: "smooth",
-      //      Defines vertical alignment.
-      block: "nearest",
-      //      Defines horizontal alignment.
-      inline: "start",
-    });
-  };
-
-  const nextImage = () => {
-    if (currentImage >= totalNumberOfTestimonials - 1) {
-      scrollToImage(0);
-    } else {
-      scrollToImage(currentImage + 1);
-    }
-  };
-
-  const previousImage = () => {
-    if (currentImage === 0) {
-      scrollToImage(totalNumberOfTestimonials - 1);
-    } else {
-      scrollToImage(currentImage - 1);
-    }
-  };
-  const refs = TESTIMONIALS_STATICS.reduce((acc, val, i) => {
-    acc[i] = createRef();
-    return acc;
-  }, {});
-
-  useEffect(() => {
-    const autoplay = setInterval(() => {
-      console.log(`currentImage: ${currentImage}`);
-      nextImage;
-    }, 6000);
-
-    return () => clearInterval(autoplay);
-  }, [nextImage]);
-  return (
-    <div className="w-screen mb-16 flex flex-1 items-center justify-center bg-light-card-background text-darkest-text-color rounded-lg shadow-lg mt-10 py-10">
-      <div className="flex flex-col justify-center items-center w-5/6">
-        <header className="flex mb-12 text-center justify-between w-full">
-          <h1 className="font-bold text-4xl capitalize italic text-darkest-text-color">
-            Testimonial
+    <div className="w-screen mb-16 flex flex-1 items-center justify-center bg-light-card-background text-darkest-text-color rounded-lg shadow-lg mt-10 py-10 border-2 border-red-600">
+      <div className="flex flex-col justify-center items-center w-4/6 border-2 border-blue-600 overflow-hidden">
+        <header className="flex flex-col mb-12 text-center">
+          <h1 className="font-bold text-4xl capitalize text-darkest-text-color">
+            What our clients say
           </h1>
-          {true && (
-            <Pagination
-              refs={refs}
-              nextImage={nextImage}
-              previousImage={previousImage}
-              currentImage={currentImage}
-              totalNumberOfTestimonials={totalNumberOfTestimonials}
-            />
-          )}
+          <h4 className="">
+            Our clients send us bunch of smiles with our services and we love
+            them
+          </h4>
         </header>
-        <div className="flex justify-center items-center w-4/5 overflow-hidden ">
-          {TESTIMONIALS_STATICS.map(({ text, name }, index) => {
-            return (
-              <TestimonialCarousel
-                key={name}
-                text={text}
-                name={name}
-                index={index}
-                refs={refs}
-              />
-            );
-          })}
-        </div>
-        <div className="self-center pt-6">
-          {false && (
-            <Pagination
-              refs={refs}
-              nextImage={nextImage}
-              previousImage={previousImage}
-              currentImage={currentImage}
-              totalNumberOfTestimonials={totalNumberOfTestimonials}
-            />
-          )}
+        <div className=" self-center w-3/4  border-2 border-emerald-600">
+          <Swiper spaceBetween={25} slidesPerView={1} effect="fade">
+            {TESTIMONIALS_STATICS.map(({ name, place, text }) => {
+              return (
+                <SwiperSlide>
+                  <div className="swiper-slide flex flex-col justify-center items-center w-full overflow-hidden text-center border-2 border-sky-600">
+                    <div className="w-28 h-28 rounded-full overflow-hidden mb-4">
+                      <img className="w-full h-full object-cover" src={image} />
+                    </div>
+                    <h3 className="font-bold">{name}</h3>
+                    <h4>{place}</h4>
+                    <div className="text-darkest-text-color text-center w-3/4">
+                      <p>{text}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
     </div>
@@ -153,20 +45,24 @@ export default function Testimonial(): ReactElement {
 
 export const TESTIMONIALS_STATICS = [
   {
+    name: `Robert Brown`,
+    place: `Port Edward, South Africa`,
     text: `Ea laborum sunt cupidatat Lorem pariatur duis officia eu id
     proident.Ea do consectetur id nostrud irure non fugiat esse est in est
     laboris ea.Deserunt eiusmod incididunt cillum sunt.Incididunt amet
     excepteur deserunt labore Lorem cupidatat anim labore veniam enim
     qui.Amet est elit voluptate magna ad adipisicing.`,
-    name: `Robert Brown`,
   },
   {
+    name: `Litha Lethulethu`,
+    place: `Ghamalakhe, South Africa`,
     text: `Ea laborum sunt cupidatat Lorem pariatur duis officia eu id
     proident.Ea do consectetur id nostrud irure non fugiat esse est in est
     laboris ea.Deserunt eiusmod incididunt cillum sunt..`,
-    name: `Ice Cube`,
   },
   {
+    name: `Robert Brown`,
+    place: `Uvongo, South Africa`,
     text: `Ea laborum sunt cupidatat Lorem pariatur duis officia eu id
     proident.Ea do consectetur id nostrud irure non fugiat esse est in est
     laboris ea.DeseruntIncididunt amet
@@ -174,21 +70,22 @@ export const TESTIMONIALS_STATICS = [
     qui.Amet est elit voluptate magna ad adipisicing eiusmod incididunt cillum sunt.Incididunt amet
     excepteur deserunt labore Lorem cupidatat anim labore veniam enim
     qui.Amet est elit voluptate magna ad adipisicing.`,
-    name: `Robert Lesley`,
   },
   {
+    name: `Rajesh Moodley`,
+    place: `Port Shepstone, South Africa`,
     text: `Ea laborum sunt cupidatat Lorem pariatur duis officia eu id
     proident.Ea do consectetur id nostrud irure non fugiat esse est in est
     laboris ea.Deserunt eiusmodEa laborum sunt cupidatat Lorem pariatur duis officia eu id
     proident. anim labore veniam enim incididunt cillum sunt.Incididunt amet
     excepteur deserunt labore Lorem cupidatat anim labore veniam enim
     qui.Amet est elit voluptate magna ad adipisicing.`,
-    name: `Emma Brown`,
   },
   {
+    name: `Anonymous`,
+    place: `Pennington, South Africa`,
     text: `Ea laborum sunt cupidatat Lorem pariatur duis officia eu id
     proident. anim labore veniam enim
     qui.Amet est elit voluptate magna ad adipisicing.`,
-    name: `Seaview Summer`,
   },
 ];
