@@ -20,9 +20,9 @@ export default function NewTestimonial(): ReactElement {
         </header>
         <div className=" self-center w-3/4  border-2 border-emerald-600">
           <Swiper spaceBetween={25} slidesPerView={1} effect="fade">
-            {TESTIMONIALS_STATICS.map(({ name, place, text }) => {
+            {TESTIMONIALS_STATICS.map(({ name, place, text }, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={`${name}${index}`}>
                   <div className="swiper-slide flex flex-col justify-center items-center w-full overflow-hidden text-center border-2 border-sky-600">
                     <div className="w-28 h-28 rounded-full overflow-hidden mb-4">
                       <img className="w-full h-full object-cover" src={image} />
