@@ -13,11 +13,11 @@ export default function ContactCard(): ReactElement {
           <svg
             preserveAspectRatio="none"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 583 95"
+            viewBox="0 0 300 105"
             className="absolute left-0 bottom-0 w-full "
           >
             <polygon
-              points="-30,95 583,95 583,65"
+              points="-30,105 300,150 300,65"
               className="text-white fill-current"
             ></polygon>
           </svg>
@@ -50,10 +50,9 @@ export default function ContactCard(): ReactElement {
               autoFocus
               placeholder="Email"
             />
-            <input
+            <textarea
               className="shadow appearance-none border rounded w-full py-2 px-3 mb-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              name="text"
-              type="text"
+              name="message"
               required
               autoFocus
               placeholder="Message"

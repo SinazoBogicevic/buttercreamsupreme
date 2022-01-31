@@ -10,6 +10,8 @@ module.exports = {
         "darkest-text-color": "#43000b",
         "lightest-text-color": "#ff1b43",
         "light-card-background": "#fcf6f7",
+        "salmon-pink": "rgb(250, 128, 114)",
+        "dirt-brown": "#422e28",
       },
       backgroundImage: {
         "contact-pattern":
