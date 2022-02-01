@@ -11,6 +11,8 @@ import CloseIcon from "@material-ui/icons/Close";
 import React, { ReactElement, useState } from "react";
 import { black, pink, white } from "../constants/colors";
 import Sidebar from "./Sidebar";
+import { isContext } from "vm";
+import { Context } from "./Context";
 
 export type NavbarPops = {
   image: string;
@@ -19,10 +21,9 @@ export type NavbarPops = {
 
 export default function Navbar({ image, links }: NavbarPops): ReactElement {
   const classes = useStyles();
-  const [active, setActive] = useState(false);
+  const [context, setContext] = useState(false);
 
-  const handleOpen = () => setActive((prev) => !prev);
-  console.log(active);
+  const handleOpen = () => setContext((prev) => !prev);
 
   const ListItemLink = links.map(({ path, link }) => {
     return (
@@ -33,38 +34,40 @@ export default function Navbar({ image, links }: NavbarPops): ReactElement {
   });
 
   return (
-    <div className={classes.root}>
-      <AppBar position="sticky">
-        <Toolbar className={classes.toolbar}>
-          <Typography variant="h6" className={classes.title}>
-            Buttercream Supreme
-          </Typography>
-          <List className={classes.list}>{ListItemLink}</List>
-          {active ? (
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="inherit"
-              aria-label="menu"
-              onClick={handleOpen}
-            >
-              <CloseIcon />
-            </IconButton>
-          ) : (
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="inherit"
-              aria-label="menu"
-              onClick={handleOpen}
-            >
-              <MenuIcon />
-            </IconButton>
-          )}
-        </Toolbar>
-      </AppBar>
-      <Sidebar links={links} active={active} />
-    </div>
+    <Context.Provider value={[context, setContext]}>
+      <div className={classes.root}>
+        <AppBar position="sticky">
+          <Toolbar className={classes.toolbar}>
+            <Typography variant="h6" className={classes.title}>
+              Buttercream Supreme
+            </Typography>
+            <List className={classes.list}>{ListItemLink}</List>
+            {context ? (
+              <IconButton
+                edge="start"
+                className={classes.menuButton}
+                color="inherit"
+                aria-label="menu"
+                onClick={handleOpen}
+              >
+                <CloseIcon />
+              </IconButton>
+            ) : (
+              <IconButton
+                edge="start"
+                className={classes.menuButton}
+                color="inherit"
+                aria-label="menu"
+                onClick={handleOpen}
+              >
+                <MenuIcon />
+              </IconButton>
+            )}
+          </Toolbar>
+        </AppBar>
+        <Sidebar links={links} active={context} />
+      </div>
+    </Context.Provider>
   );
 }
 
