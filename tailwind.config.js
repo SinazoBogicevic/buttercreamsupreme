@@ -5,12 +5,16 @@ module.exports = {
     extend: {
       colors: {
         "primary-lightest": "#ffffff",
-        "primary-medium": "#cb0026",
-        "primary-darkest": "#7d0016",
+        "primary-medium": "rgb(250, 128, 114)",
+        "primary-darkest": "#FF8070",
         "darkest-text-color": "#43000b",
         "lightest-text-color": "#ff1b43",
         "light-card-background": "#fcf6f7",
         "salmon-pink": "rgb(250, 128, 114)",
+        // peach: "#F0C6A6",
+        // indigo: "#3E1F3E",
+        // coral: "#FF8070",
+        // aqua: "#21C5C4",
         "dirt-brown": "#422e28",
       },
       backgroundImage: {

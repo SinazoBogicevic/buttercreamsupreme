@@ -78,7 +78,7 @@ export const AnimatedButton = () => {
         ))}
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex  items-center justify-center mb-2 text-2xl p-0 w-12 h-12 text-pink-500 bg-white rounded-full hover:bg-pink-700 hover:text-white focus:scale-110 motion-reduce:transform-none  active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none z-30"
+          className="flex  items-center justify-center mb-2 text-2xl p-0 w-12 h-12 text-primary-darkest bg-white rounded-full hover:bg-primary-darkest hover:text-white focus:scale-110 motion-reduce:transform-none  active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none z-30"
         >
           <FiMessageSquare />
         </motion.button>

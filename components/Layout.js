@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Meta />
-      <div className="flex flex-col justify-items-center items-center overflow-hidden">
+      <div className="flex flex-col justify-items-center items-center">
         {children}
       </div>
       <Footer />

@@ -26,13 +26,13 @@ export default function Featured(): ReactElement {
     <div className={classes.container}>
       <div className={classes.textContainer}>
         <Typography className={classes.title} variant="h1">
-          our featured cakes
+          featured cakes
         </Typography>
         <Typography className={classes.subtitle} variant="h3">
           Seldolor sit amet consect etur
         </Typography>
       </div>
-      <div className="mt-16 mb-28">
+      <div className="w-full mt-28 mb-28">
         <FeaturedProductsCarousel gridData={STATIC_DATA} />
       </div>
     </div>
@@ -44,22 +44,25 @@ const useStyles = makeStyles((theme: Theme) =>
     container: {
       display: "flex",
       flexDirection: "column",
-      marginTop: 24,
+      justifyItems: "center",
+      alignItems: "center",
+      textAlign: "center",
+      marginTop: "8rem",
     },
     title: {
       textTransform: "capitalize",
-      fontWeight: 500,
-      fontSize: "2rem",
-      color: "#56000f",
+      fontWeight: 700,
+      fontSize: "2.25rem",
+      color: "#43000b",
     },
     subtitle: {
-      fontSize: 18,
-      color: "#56000f",
+      fontSize: "1.5rem",
+      color: "rgb(250, 128, 114)",
     },
     textContainer: {
       display: "flex",
       flexDirection: "column",
-      justifyContent: "flex-start",
+      justifyContent: "center",
     },
     gridListWrapper: {
       display: "flex",

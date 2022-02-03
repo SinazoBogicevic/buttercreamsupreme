@@ -2,6 +2,8 @@
 import React, { ReactElement } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../styles/tailwind.css";
+import "swiper/swiper.min.css";
+// import 'swiper/components/pagination/pagination.min.css'
 import FeaturedProductCard from "./FeaturedProductCard";
 
 export type Props = {

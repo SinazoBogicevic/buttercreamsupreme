@@ -7,13 +7,13 @@ import { HiOutlineCake } from "react-icons/hi";
 
 export default function ServicesWeProvideBanner(): ReactElement {
   return (
-    <div className="w-screen bg-light-card-background text-darkest-text-color flex flex-col items-center rounded-lg shadow-lg mt-10 py-10">
+    <div className="w-screen bg-light-card-background text-darkest-text-color flex flex-col items-center rounded-lg shadow-lg mt-32 py-10">
       <h1 className="font-bold flex flex-col items-center content-center text-center  text-5xl uppercase mb-12">
         Goods
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         <div className=" container flex flex-col items-center content-center text-lg text-center ">
-          <div className="text-7xl">
+          <div className=" text-salmon-pink text-7xl">
             <GiCupcake />
           </div>
           <h4 className="my-2 capitalize font-semibold text-xl">Cupcakes</h4>
@@ -22,16 +22,16 @@ export default function ServicesWeProvideBanner(): ReactElement {
           </p>
         </div>
         <div className=" container flex flex-col items-center content-center text-lg text-center">
-          <div className="text-7xl">
+          <div className=" text-salmon-pink text-7xl">
             <RiCake3Line />
           </div>
-          <h4 className="my-2 capitalize font-semibold text-xl">Cakes</h4>
+          <h4 className="my-2 capitalize font-semibold text-xl">Donuts</h4>
           <p className="my-0 px-6">
             Culpa eu laboris dolor labore aliquip non et do sit culpa.
           </p>
         </div>
         <div className=" container flex flex-col items-center content-center text-lg text-center">
-          <div className="text-7xl">
+          <div className=" text-salmon-pink text-7xl">
             <HiOutlineCake />
           </div>
           <h4 className="my-2 capitalize font-semibold text-xl">
