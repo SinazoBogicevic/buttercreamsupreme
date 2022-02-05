@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/tailwind.css";
 import { RiArrowUpSLine, RiArrowDownSLine } from "react-icons/ri";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 interface AccordionItemProps {
   question: string;
@@ -14,68 +14,71 @@ export const AccordionItem = ({
   answer,
   styles,
 }: AccordionItemProps) => {
-  const [click, setClick] = useState(true);
+  const [click, setClick] = useState(false);
   const handleClick = () => setClick((prev) => !prev);
+  const ease = [0.04, 0.62, 0.23, 0.98];
   const variants = {
     open: {
-      height: "240px",
-      // opacity: 1,
-      transition: {
-        duration: 0.3,
-      },
-    },
-    closed: {
-      height: 0,
-      // opacity: 0,
-      transition: {
-        duration: 0.3,
-      },
-    },
-  };
-
-  const answerVariants = {
-    open: {
-      height: "180px",
+      height: "auto",
       opacity: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.8,
+        ease: ease,
       },
     },
     closed: {
       height: 0,
       opacity: 0,
       transition: {
-        duration: 0.6,
+        duration: 0.8,
+        ease: ease,
+      },
+    },
+  };
+
+  const answerVariants = {
+    open: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.8,
+      },
+    },
+    closed: {
+      opacity: 0,
+      scale: 0.8,
+      transition: {
+        duration: 0.8,
       },
     },
   };
 
   return (
-    <div className="flex flex-col text-primary-medium p-4">
-      <div className="flex justify-between items-end px-6">
-        <p>What is a cake?</p>
+    <div className="flex flex-col text-primary-medium p-4 pb-0 mb-4">
+      <div className="flex justify-between items-end px-6 border-b border-slate-50 pb-4">
+        <p>{question}</p>
         <div onClick={handleClick} className="mb-2">
           {click ? <RiArrowDownSLine /> : <RiArrowUpSLine />}
         </div>
       </div>
-      <motion.div
-        initial="closed"
-        animate={click ? "open" : "closed"}
-        variants={variants}
-        className="bg-light-card-background text-dirt-brown px-6"
-      >
-        <motion.p
-          initial="closed"
-          animate={click ? "open" : "closed"}
-          variants={answerVariants}
-        >
-          Labore aute exercitation quis occaecat dolore Lorem occaecat enim nisi
-          amet fugiat incididunt proident. Labore aute exercitation quis
-          occaecat dolore Lorem occaecat enim nisi amet fugiat incididunt
-          proident. Labore aute exercitation quis occaecat dolore Lorem occaecat
-          enim nisi amet fugiat incididunt proident.
-        </motion.p>
-      </motion.div>
+      <AnimatePresence initial={false}>
+        {click && (
+          <motion.div
+            initial="closed"
+            animate={click ? "open" : "closed"}
+            variants={variants}
+            className="bg-light-card-background text-dirt-brown px-6"
+          >
+            <motion.p
+              initial="closed"
+              animate={click ? "open" : "closed"}
+              variants={answerVariants}
+            >
+              {answer}
+            </motion.p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
