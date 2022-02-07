@@ -19,10 +19,11 @@ export default function MasonryGrid({ gridData }: Props): ReactElement {
         width: "100%",
         height: "auto",
         overflowY: "scroll",
+        marginTop: "4rem",
         marginBottom: "4rem",
       }}
     >
-      <ImageList variant="masonry" cols={3} gap={8}>
+      <ImageList variant="masonry" cols={2} gap={8}>
         {gridData.map(({ image, key }) => (
           <ImageListItem key={key}>
             <img src={image} srcSet={image} alt={"cake"} loading="lazy" />

@@ -9,8 +9,8 @@ import "../styles/tailwind.css";
 
 export default function Footer(): ReactElement {
   return (
-    <footer className="self-center justify-self-center shrink-0 mx-4 pt-12  rounded  bg-primary-darkest text-white relative  pt-8 pb-6">
-      <div className="container mx-auto px-4">
+    <footer className="self-center justify-self-center shrink-0 pt-12  rounded  bg-primary-darkest text-white relative  pt-8 pb-6">
+      <div className="container px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
             <h4 className="text-3xl font-semibold ">Let's keep in touch!</h4>

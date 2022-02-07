@@ -4,7 +4,7 @@ import "../styles/tailwind.css";
 export default function ServicesWeProvideBanner(): ReactElement {
   const [subscribed, setSubscription] = useState(false);
   return (
-    <div className="self-center flex flex-col max-w-4xl md:h-56 bg-light-card-background rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
+    <div className="self-center flex flex-col md:h-56 bg-light-card-background rounded-lg shadow-lg overflow-hidden md:flex-row my-10">
       <div className="md:flex items-center justify-center md:w-1/2 ">
         <div className="py-6 px-8 md:py-0">
           <h2 className="text-darkest-text-color text-2xl font-bold">

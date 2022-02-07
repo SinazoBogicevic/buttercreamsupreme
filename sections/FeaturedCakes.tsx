@@ -29,7 +29,8 @@ export default function Featured(): ReactElement {
           featured cakes
         </Typography>
         <Typography className={classes.subtitle} variant="h3">
-          Seldolor sit amet consect etur
+          Seldolor sit amet consect eturMinim excepteur laboris anim fugiat
+          adipisicing occaecat aliquip nostrud excepteur sint.
         </Typography>
       </div>
       <div className="w-full mt-28 mb-28">
@@ -52,10 +53,11 @@ const useStyles = makeStyles((theme: Theme) =>
     title: {
       textTransform: "capitalize",
       fontWeight: 700,
-      fontSize: "2.25rem",
+      fontSize: "3rem",
       color: "#43000b",
     },
     subtitle: {
+      marginTop: 8,
       fontSize: "1.5rem",
       color: "rgb(250, 128, 114)",
     },
@@ -63,6 +65,8 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
+      paddingRight: "4rem",
+      paddingLeft: "4rem",
     },
     gridListWrapper: {
       display: "flex",
