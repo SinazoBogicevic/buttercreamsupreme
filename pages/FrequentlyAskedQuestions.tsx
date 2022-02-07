@@ -1,10 +1,10 @@
 // @ts-ignore
 import React from "react";
-import { AccordianItem } from "../stories/AccordianItem.stories";
+import AccordionItem from "../components/AccordionItem";
 
 export default function FrequentlyAskedQuestions() {
   const accordion = FAQs.map(({ question, answer }) => {
-    return <AccordianItem key={question} question={question} answer={answer} />;
+    return <AccordionItem key={question} question={question} answer={answer} />;
   });
   return (
     <div className="lflex flex-col justify-items-center items-center text-center">

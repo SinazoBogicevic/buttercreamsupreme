@@ -29,7 +29,7 @@ export default function FeaturedCard({
         />
       </div>
       <div className="px-5 pt-2">
-        <h3 className="text-darkest-text-color capitalize font-bold dark:text-white">
+        <h3 className="text-darkest-text-color capitalize text-xl font-bold dark:text-white">
           {name}
         </h3>
 
@@ -54,7 +54,7 @@ export default function FeaturedCard({
           <span className="text-m font-bold text-darkest-text-color ">
             R{price}
           </span>
-          <ButtonStandard label="add to cart" />
+          {false && <ButtonStandard label="add to cart" />}
         </div>
       </div>
     </div>

@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexWrap: "wrap",
       padding: "50px 100px",
       marginTop: "8rem",
-      backgroundColor: "#dc2626",
+      backgroundColor: "#FF8070",
       color: "#fafaf9",
       overflowX: "hidden",
       borderRadius: 8,

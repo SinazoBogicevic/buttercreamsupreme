@@ -1,8 +1,9 @@
 import Grid from "../components/Grid";
 import Navbar from "../components/Navbar";
 import Footer from "../sections/Footer";
+import MasonryGrid from "../components/MasonryGrid";
 
-export default function Gallery() {
+export default function ProductList() {
   return (
     <div>
       <Navbar
@@ -22,16 +23,7 @@ export default function Gallery() {
           },
         ]}
       />
-      <header className="my-16 text-center">
-        <h1 className="font-bold text-4xl text-black capitalize text-center ">
-          Our Selection
-        </h1>
-        <h4 className="font-medium text-xl text-gray-400 capitalize italic text-center ">
-          loremProident nulla laborum aliquip esse est magna dolore fugiat elit
-          cupidatat.
-        </h4>
-      </header>
-      <Grid gridData={STATIC_DATA} />
+      <MasonryGrid gridData={GRIDDATA} />
 
       <Footer />
     </div>
@@ -56,37 +48,50 @@ const NAVBAR_PROPS = {
   ],
 };
 
-const STATIC_DATA = [
+const GRIDDATA = [
   {
-    name: "Product1",
-    price: 250,
-    salePrice: 190,
-    sale: true,
-    thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+    image:
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1389&q=80",
+    key: 1,
   },
   {
-    name: "Product2",
-    price: 250,
-    salePrice: 190,
-    sale: true,
-    thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+    image:
+      "https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+    key: 3,
   },
   {
-    name: "Product3",
-    price: 250,
-    salePrice: 190,
-    sale: true,
-    thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+    image: "https://unsplash.com/photos/6SHd7Q-l1UQ",
+    key: 4,
   },
   {
-    name: "Product4",
-    price: 250,
-    salePrice: 190,
-    sale: true,
-    thumb:
-      "https://cakeciouswp.bolvosites.com/demo4/wp-content/uploads/sites/17/2018/06/welcome-right.jpg",
+    image:
+      "https://images.unsplash.com/photo-1582293041079-7814c2f12063?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    key: 5,
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1622896784083-cc051313dbab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    key: 6,
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1631397833242-fc6213046352?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    key: 7,
+  },
+
+  {
+    image:
+      "https://images.unsplash.com/photo-1557308536-ee471ef2c390?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    key: 8,
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1627308595171-d1b5d67129c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+    key: 9,
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80",
+    key: 10,
   },
 ];
