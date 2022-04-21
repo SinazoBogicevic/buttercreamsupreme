@@ -1,8 +1,8 @@
 import { Button, CardMedia, Typography } from "@material-ui/core";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import React, { ReactElement } from "react";
 // @ts-ignore
 import heroImage from "../public/imgs/gingerHouseCake.jpg";
-import React, { ReactElement } from "react";
 
 export default function KnowMoreBanner(): ReactElement {
   const classes = useStyles();

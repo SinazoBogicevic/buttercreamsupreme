@@ -27,8 +27,9 @@ export default function Home() {
         ]}
       />
       <KnowMoreBanner />
-      <ServicesWeProvideBanner />
+
       <FeaturedCakes />
+      <ServicesWeProvideBanner />
       <Testimonial />
       <NewsletterBanner />
       <Footer />

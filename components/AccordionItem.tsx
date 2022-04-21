@@ -14,6 +14,7 @@ export const AccordionItem = ({
   answer,
   styles,
 }: AccordionItemProps) => {
+  console.log(process.env.REACT_APP_APIKEY);
   const [click, setClick] = useState(false);
   const handleClick = () => setClick((prev) => !prev);
   const ease = [0.04, 0.62, 0.23, 0.98];

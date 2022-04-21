@@ -15,7 +15,7 @@ export type Props = {
       price: number;
       salePrice: number;
       thumb: string;
-      sale: boolean;
+      isOnSale: boolean;
     }
   ];
 };

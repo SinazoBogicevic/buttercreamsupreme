@@ -1,7 +1,21 @@
 // @ts-ignore
+import { useState } from "react";
 import emptyPlate from "../public/imgs/emptyPlate.jpg";
 
 export default function PageNotFound() {
+  const [files, setFiles] = useState([]);
+
+  const onFileChange = (e) => {
+    for (let i = 0; i < e.target.files.length; i++) {
+      const newFile = e.target.files[i];
+      console.log(newFile);
+      newFile["id"] = Math.random();
+      // add an "id" property to each File object
+      setFiles((prevState) => [...prevState, newFile]);
+    }
+    console.log("done");
+  };
+
   return (
     <div
       className="h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center"
@@ -21,6 +35,13 @@ export default function PageNotFound() {
         >
           Home page
         </a>
+        <form>
+          <label>
+            Select Files
+            <input type="file" multiple onChange={onFileChange} />
+          </label>
+          <button>Upload</button>
+        </form>
       </div>
     </div>
   );

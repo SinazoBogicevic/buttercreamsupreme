@@ -1,0 +1,696 @@
+import { Product, ProductType } from "../data-types/product-types";
+
+export const cakeData: Array<Product> = [
+  {
+    type: ProductType.cake,
+    name: "Lemon Curd",
+    imageUrl: "",
+    pricing: [
+      {
+        layers: "double",
+        size: "15cm",
+        price: 270,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "20cm",
+        price: 295,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "23cm",
+        price: 385,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "15cm",
+        price: 340,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "20cm",
+        price: 375,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "23cm",
+        price: 500,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+  {
+    type: ProductType.cake,
+    name: "Snicker",
+    imageUrl: "",
+    pricing: [
+      {
+        layers: "double",
+        size: "15cm",
+        price: 270,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "20cm",
+        price: 295,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "23cm",
+        price: 365,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "15cm",
+        price: 340,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "20cm",
+        price: 375,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "23cm",
+        price: 500,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+  {
+    type: ProductType.cake,
+    name: "Cookies 'n Cream",
+    imageUrl: "",
+    pricing: [
+      {
+        layers: "double",
+        size: "15cm",
+        price: 210,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "20cm",
+        price: 255,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "23cm",
+        price: 325,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "15cm",
+        price: 295,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "20cm",
+        price: 360,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "23cm",
+        price: 460,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+  {
+    type: ProductType.cake,
+    name: "Carrot",
+    imageUrl: "",
+    pricing: [
+      {
+        layers: "double",
+        size: "15cm",
+        price: 180,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "20cm",
+        price: 210,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "23cm",
+        price: 280,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "15cm",
+        price: 235,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "20cm",
+        price: 260,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "23cm",
+        price: 350,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+  {
+    type: ProductType.cake,
+    name: "Choc Mint",
+    imageUrl: "",
+    pricing: [
+      {
+        layers: "double",
+        size: "15cm",
+        price: 220,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "20cm",
+        price: 260,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "23cm",
+        price: 305,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "15cm",
+        price: 270,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "20cm",
+        price: 295,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "23cm",
+        price: 365,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+  {
+    type: ProductType.cake,
+    name: "Pina Colada",
+    imageUrl: "",
+    pricing: [
+      {
+        layers: "double",
+        size: "15cm",
+        price: 305,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "20cm",
+        price: 340,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "double",
+        size: "23cm",
+        price: 410,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "15cm",
+        price: 375,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "20cm",
+        price: 410,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        layers: "triple",
+        size: "23cm",
+        price: 480,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+];
+
+export const cupCakeData: Array<Product> = [
+  {
+    type: ProductType.cupcake,
+    name: "Lemon Heavan",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 270,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "12",
+        price: 190,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+      {
+        size: "24",
+        price: 225,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "24",
+        price: 315,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+      {
+        size: "48",
+        price: 445,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "48",
+        price: 555,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+    ],
+  },
+  {
+    type: ProductType.cupcake,
+    name: "Snicker Kicker",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 195,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "12",
+        price: 220,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+      {
+        size: "24",
+        price: 340,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "24",
+        price: 375,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+      {
+        size: "48",
+        price: 615,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "48",
+        price: 685,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+    ],
+  },
+  {
+    type: ProductType.cupcake,
+    name: "Cookies n Cream",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 190,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "12",
+        price: 220,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+      {
+        size: "24",
+        price: 335,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "24",
+        price: 375,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+      {
+        size: "48",
+        price: 565,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "48",
+        price: 665,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+    ],
+  },
+  {
+    type: ProductType.cupcake,
+    name: "Carrot Palate",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 195,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "12",
+        price: 220,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+      {
+        size: "24",
+        price: 295,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "24",
+        price: 340,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+      {
+        size: "48",
+        price: 445,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "48",
+        price: 555,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+    ],
+  },
+];
+
+export const cupCakeMixData: Array<Product> = [
+  {
+    type: ProductType.cupcake,
+    name: "Lemon and Carrot",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 165,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "12",
+        price: 195,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+    ],
+  },
+  {
+    type: ProductType.cupcake,
+    name: "Snicker and Cookies",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 185,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "12",
+        price: 215,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+    ],
+  },
+  {
+    type: ProductType.cupcake,
+    name: "Carrot and Snicker",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 190,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "12",
+        price: 210,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+    ],
+  },
+  {
+    type: ProductType.cupcake,
+    name: "Cookies and Lemon",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 165,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "12",
+        price: 205,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+    ],
+  },
+  {
+    type: ProductType.cupcake,
+    name: "Lemon and Snicker",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 175,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "12",
+        price: 205,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+    ],
+  },
+  {
+    type: ProductType.cupcake,
+    name: "Carrot and Cookies",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 180,
+        isOnSale: false,
+        salePrice: 0,
+      },
+      {
+        size: "12",
+        price: 210,
+        isOnSale: false,
+        salePrice: 0,
+        isGlutenFreeOption: true,
+      },
+    ],
+  },
+];
+
+export const donutData: Array<Product> = [
+  {
+    type: ProductType.donut,
+    name: "Glazed",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 150,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+  {
+    type: ProductType.donut,
+    name: "Powdered",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 150,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+  {
+    type: ProductType.donut,
+    name: "Cinnamon Sugar",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 150,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+  {
+    type: ProductType.donut,
+    name: "Chocolate",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 250,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+  {
+    type: ProductType.donut,
+    name: "Glazed",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 220,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+  {
+    type: ProductType.donut,
+    name: "Variety",
+    imageUrl: "",
+    pricing: [
+      {
+        size: "12",
+        price: 200,
+        isOnSale: false,
+        salePrice: 0,
+      },
+    ],
+  },
+];
+
+export const AllProductData = {
+  cakeData,
+  cupCakeData,
+  cupCakeMixData,
+  donutData,
+};

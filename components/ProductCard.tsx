@@ -6,7 +6,7 @@ export type Props = {
   name: string;
   price: number;
   salePrice: number;
-  sale: boolean;
+  isOnSale: boolean;
   thumb: string;
   handleCard?: () => void;
 };
@@ -15,7 +15,7 @@ export default function FeaturedCard({
   name,
   price,
   salePrice,
-  sale,
+  isOnSale,
   thumb,
   ...rest
 }: Props): ReactElement {
@@ -37,7 +37,7 @@ export default function FeaturedCard({
           Order now
         </span> */}
         <span className="">
-          {sale && (
+          {isOnSale && (
             <span className="text-gray-400 text-sm line-through mr-4">
               R{salePrice}
             </span>
